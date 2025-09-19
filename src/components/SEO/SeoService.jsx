@@ -42,6 +42,8 @@ useEffect(() => {
   fetchServices();
 }, []);
 
+console.log(services)
+
 
   return (
     <div>

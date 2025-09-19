@@ -169,7 +169,7 @@ const EnhancedLeadGenerationSection = () => {
               <div
                 key={index}
                 className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"
-                whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                whilehover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                 transition={{ duration: 0.2 }}
               >
                 <div className="text-blue-400">{stat.icon}</div>
@@ -201,7 +201,7 @@ const EnhancedLeadGenerationSection = () => {
             <div
               key={index}
               variants={slideInVariants}
-              whileHover={{ y: -10 }}
+              whilehover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
               <Card className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-none shadow-2xl backdrop-blur-sm group h-full overflow-hidden">
@@ -213,7 +213,7 @@ const EnhancedLeadGenerationSection = () => {
                   <CardHeader className="pb-4">
                     <div
                       className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.color} mb-6 shadow-lg`}
-                      whileHover={{ 
+                      whilehover={{ 
                         scale: 1.1, 
                         rotate: [0, -10, 10, 0],
                         boxShadow: "0 20px 40px rgba(0,0,0,0.3)"
@@ -247,7 +247,7 @@ const EnhancedLeadGenerationSection = () => {
                     
                     <button
                       className="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors group-hover:gap-3"
-                      whileHover={{ x: 5 }}
+                      whilehover={{ x: 5 }}
                       transition={{ duration: 0.2 }}
                     >
                       <span>Learn more</span>
@@ -269,11 +269,11 @@ const EnhancedLeadGenerationSection = () => {
         >
           <button
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
-            whileHover={{ 
+            whilehover={{ 
               scale: 1.05,
               boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)"
             }}
-            whileTap={{ scale: 0.95 }}
+            whiletap={{ scale: 0.95 }}
           >
             Start Generating Leads Today
           </button>

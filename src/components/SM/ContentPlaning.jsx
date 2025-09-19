@@ -126,9 +126,9 @@ const ContentPlaning = () => {
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div 
+          <motion.div 
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            //whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
@@ -136,14 +136,14 @@ const ContentPlaning = () => {
             <p className="text-xl text-gray-600">
               Comprehensive content solutions tailored to your brand's unique voice and objectives
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                //whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 bg-amber-400">
@@ -161,16 +161,16 @@ const ContentPlaning = () => {
                 </Card>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="container mx-auto px-4 text-center">
-          <div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            //whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
@@ -183,7 +183,7 @@ const ContentPlaning = () => {
             <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg">
               Schedule a Consultation
             </Button>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

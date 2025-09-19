@@ -88,7 +88,7 @@ const DigitalMarketingSection = () => {
                 <CardHeader>
                   <div
                     className="mb-4"
-                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    whilehover={{ scale: 1.2, rotate: 5 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     {service.icon}
@@ -124,7 +124,7 @@ const DigitalMarketingSection = () => {
             >
               <div
                 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
-                whileHover={{ scale: 1.1 }}
+                whilehover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 200 }}
               >
                 {stat.value}
@@ -147,8 +147,8 @@ const DigitalMarketingSection = () => {
           >
             <a
               href="#contact"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              whilehover={{ scale: 1.1 }}
+              whiletap={{ scale: 0.95 }}
             >
               Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
             </a>

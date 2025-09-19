@@ -8,9 +8,8 @@ import Footer from "@/components/Footer";
 import FloatingDock from "@/components/FloatingDock";
 import { ThemeProvider } from "@/components/theme-provider.jsx";
 
-import './globals.css'
-import './app.css'
-
+import "./globals.css";
+import "./app.css";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -30,20 +29,19 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <body suppressHydrationWarning>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <div className="lg:block hidden">
+            <NavBar />
+          </div>
+          <div className="lg:hidden block">
+            <FloatingDock />
+          </div>
 
-        <div className="lg:block hidden">
-          <NavBar />
-        </div>
-        <div className="lg:hidden block">
-          <FloatingDock />
-        </div>
+          {/* Page content */}
+          {children}
 
-        {/* Page content */}
-        {children}
-
-        <Footer />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

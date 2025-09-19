@@ -52,9 +52,9 @@ const CROServices = () => {
     <div className="relative bg-gradient-to-b from-white to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading and Subheading */}
-        <div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
@@ -64,16 +64,16 @@ const CROServices = () => {
           <p className="text-lg text-gray-600 mt-4 max-w-4xl mx-auto">
           Digital Nawab develops personalised CRO techniques in collaboration with professional SEO services in Lucknow to convert visitors into leads, reduce bounce rates, enhance user experience, and optimise ROI, ultimately driving measurable business growth with website design & development.
           </p>
-        </div>
+        </motion.div>
 
         {/* List of Offerings */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
           {offerings.map((offering, index) => (
-            <div
+            <motion.div
               key={index}
               variants={itemVariants}
               initial="hidden"
-              whileInView="visible"
+              
               viewport={{ once: true }}
               className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
@@ -88,23 +88,23 @@ const CROServices = () => {
               <div className="mt-4">
                 <p className="text-sm text-gray-500 mb-1">Expertise Level</p>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
+                  <motion.div
                     className="bg-[#6B46C1] h-2.5 rounded-full"
                     variants={progressVariants(offering.expertise)}
                     initial="hidden"
-                    whileInView="visible"
+                    
                     viewport={{ once: true }}
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Call to Action */}
-        <div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-12"
@@ -112,7 +112,7 @@ const CROServices = () => {
           <Button className="bg-[#6B46C1] text-white font-semibold py-3 px-8 rounded-lg hover:bg-[#5A3AB7] transition">
             Start Optimizing with Digital Nawab
           </Button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

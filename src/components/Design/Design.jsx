@@ -19,8 +19,9 @@ const Design = () => {
 
   // Extract hash manually (Next.js doesn’t auto-handle it like react-router)
   useEffect(() => {
+    
     const hash = window.location.hash;
-
+   
     if (hash) {
       const timeoutId = setTimeout(() => {
         const element = document.getElementById(hash.replace("#", ""));

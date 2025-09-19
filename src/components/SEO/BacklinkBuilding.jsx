@@ -165,10 +165,10 @@ const BacklinkBuilding = () => {
         </div>
 
         {/* Services Grid */}
-        <div
+        <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true, margin: "-100px" }}
           className="space-y-24"
         >
@@ -186,9 +186,9 @@ const BacklinkBuilding = () => {
                   
                   {/* Image Section with Easter Egg */}
                   <div className="w-full lg:w-1/2 relative">
-                    <div
+                    <motion.div
                       id={`image-${index}`}
-                      whileHover={{ scale: 1.02 }}
+                      whilehover={{ scale: 1.02 }}
                       onHoverStart={() => handleImageHover(index)}
                       transition={{ duration: 0.3 }}
                       className="relative overflow-hidden rounded-2xl shadow-2xl"
@@ -201,10 +201,10 @@ const BacklinkBuilding = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                       
                       {/* Floating Stats Card with Confetti Easter Egg */}
-                      <div
+                      <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        whileTap={{ scale: 0.95 }}
+                        //whileInView={{ opacity: 1, scale: 1 }}
+                        whiletap={{ scale: 0.95 }}
                         onClick={triggerConfetti}
                         transition={{ delay: 0.5, duration: 0.5 }}
                         className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg cursor-pointer"
@@ -217,8 +217,8 @@ const BacklinkBuilding = () => {
                             {section.stats.label}
                           </div>
                         </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   </div>
 
                   {/* Content Section */}
@@ -226,7 +226,7 @@ const BacklinkBuilding = () => {
                     {/* Icon and Title */}
                     <div className="space-y-4">
                       <div
-                        whileHover={{ rotate: 5 }}
+                        whilehover={{ rotate: 5 }}
                         transition={{ duration: 0.3 }}
                         className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${section.gradient} shadow-lg`}
                       >
@@ -251,10 +251,10 @@ const BacklinkBuilding = () => {
                     {/* Features List */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                       {section.features.map((feature, featureIndex) => (
-                        <div
+                        <motion.div
                           key={featureIndex}
                           initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
+                          //whileInView={{ opacity: 1, x: 0 }}
                           transition={{ delay: featureIndex * 0.1 + 0.3 }}
                           className="flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-lg p-3 shadow-sm border border-gray-100"
                         >
@@ -262,14 +262,14 @@ const BacklinkBuilding = () => {
                           <span className="text-sm font-medium text-gray-700">
                             {feature}
                           </span>
-                        </div>
+                        </motion.div>
                       ))}
                     </div>
 
                     {/* CTA Button */}
                     <button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                      whilehover={{ scale: 1.05 }}
+                      whiletap={{ scale: 0.95 }}
                       className={`group inline-flex items-center gap-2 bg-gradient-to-r ${section.gradient} text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300`}
                     >
                       Learn More
@@ -281,12 +281,12 @@ const BacklinkBuilding = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Bottom CTA Section */}
-        <div
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="mt-24 text-center"
         >
@@ -300,15 +300,15 @@ const BacklinkBuilding = () => {
                 Let's discuss how our SEO services can transform your online presence
               </p>
               <button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whilehover={{ scale: 1.05 }}
+                whiletap={{ scale: 0.95 }}
                 className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Get Started Today
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

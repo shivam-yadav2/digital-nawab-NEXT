@@ -165,7 +165,7 @@ const EmailMarketingSection = () => {
                   <CardContent className="p-6 text-center">
                     <div
                       className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} text-white mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                      whileHover={{ rotate: 5 }}
+                      whilehover={{ rotate: 5 }}
                     >
                       {service.icon}
                     </div>
@@ -194,7 +194,7 @@ const EmailMarketingSection = () => {
               key={index}
               className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               variants={statsVariants}
-              whileHover={{ y: -5 }}
+              whilehover={{ y: -5 }}
             >
               <div className="flex items-center justify-center mb-2 text-red-500">
                 {stat.icon}
@@ -252,7 +252,7 @@ const EmailMarketingSection = () => {
                   key={index}
                   className="flex items-center space-x-3"
                   variants={childVariants}
-                  whileHover={{ x: 5 }}
+                  whilehover={{ x: 5 }}
                 >
                   <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{benefit}</span>
@@ -273,7 +273,7 @@ const EmailMarketingSection = () => {
                   key={index}
                   className="flex items-start space-x-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                   variants={cardVariants}
-                  whileHover={{ x: 5 }}
+                  whilehover={{ x: 5 }}
                 >
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg">

@@ -51,7 +51,7 @@ const AuditForm = () => {
               {/* Current Traffic Dropdown */}
               <div>
                 <select className="w-full px-4 py-3 rounded-lg bg-[#2A4A42] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#D4FF66]">
-                  <option disabled selected>
+                  <option disabled >
                     Current Traffic
                   </option>
                   <option>Low</option>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const FeatureCard = ({ title, description, icon: Icon }) => (
   <div 
     initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
+    //whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     className="relative group"
   >
@@ -23,9 +23,9 @@ const FeatureCard = ({ title, description, icon: Icon }) => (
 );
 
 const ServicePackage = ({ title, price, features, isPopular }) => (
-  <div 
+  <motion.div 
     initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
+    //whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     className="relative group"
   >
@@ -59,7 +59,7 @@ const ServicePackage = ({ title, price, features, isPopular }) => (
         Get Started
       </button>
     </div>
-  </div>
+  </motion.div>
 );
 
 const WebsiteCopywriting = () => {
@@ -149,9 +149,9 @@ const WebsiteCopywriting = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
-        <div 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-20"
         >
@@ -162,7 +162,7 @@ const WebsiteCopywriting = () => {
             Transform visitors into customers with compelling website copy that tells your story, 
             showcases your value, and drives conversions through strategic messaging and persuasive content.
           </p>
-        </div>
+        </motion.div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
@@ -172,9 +172,9 @@ const WebsiteCopywriting = () => {
         </div>
 
         {/* Process Section */}
-        <div 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-20"
         >
@@ -188,10 +188,10 @@ const WebsiteCopywriting = () => {
                 { title: "Writing & Optimization", description: "Creating compelling, SEO-friendly content" },
                 { title: "Review & Refinement", description: "Perfecting the copy based on your feedback" }
               ].map((step, index) => (
-                <div 
+                <motion.div 
                   key={index}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  //whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                   className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
                 >
@@ -203,22 +203,22 @@ const WebsiteCopywriting = () => {
                     <div className="absolute inset-0 rounded-full bg-purple-400 animate-ping" />
                   </div>
                   <div className="w-1/2" />
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Pricing Packages */}
         <div className="mb-20">
-          <h2 
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            //whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold text-center mb-12"
           >
             Choose Your Package
-          </h2>
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {packages.map((pkg, index) => (
               <ServicePackage key={index} {...pkg} />
@@ -227,16 +227,16 @@ const WebsiteCopywriting = () => {
         </div>
 
         {/* Call to Action */}
-        <div 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          //whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center"
         >
           <button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
             Start Your Website Copy Project
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

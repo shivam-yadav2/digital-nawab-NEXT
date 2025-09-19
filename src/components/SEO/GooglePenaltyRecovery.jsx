@@ -94,9 +94,9 @@ const GooglePenaltyRecovery = () => {
 
       <div className="relative max-w-7xl mx-auto">
         {/* Header Section */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={fadeInVariants}
           className="text-center mb-20"
@@ -112,17 +112,17 @@ const GooglePenaltyRecovery = () => {
             Expert solutions to identify, analyze, and recover from Google penalties,
             restoring your website's rankings and organic traffic.
           </p>
-        </div>
+        </motion.div>
 
         {/* Penalty Types Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {penaltyTypes.map((penalty, index) => {
             const IconComponent = penalty.icon;
             return (
-              <div
+              <motion.div
                 key={index}
                 initial="hidden"
-                whileInView="visible"
+                
                 viewport={{ once: true }}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
@@ -155,15 +155,15 @@ const GooglePenaltyRecovery = () => {
                   </ul>
                 </div>
                 <div className="absolute -inset-px bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-all duration-300" />
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
         {/* Recovery Process Section */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={fadeInVariants}
           className="relative"
@@ -181,10 +181,10 @@ const GooglePenaltyRecovery = () => {
               {recoverySteps.map((step, index) => {
                 const IconComponent = step.icon;
                 return (
-                  <div
+                  <motion.div
                     key={index}
                     initial="hidden"
-                    whileInView="visible"
+                    
                     viewport={{ once: true }}
                     variants={{
                       hidden: { opacity: 0, y: 20 },
@@ -208,17 +208,17 @@ const GooglePenaltyRecovery = () => {
                       <h4 className="text-xl font-bold mb-4">{step.title}</h4>
                       <p className="text-gray-300">{step.description}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* CTA Section */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={fadeInVariants}
           className="mt-20 text-center"
@@ -238,8 +238,8 @@ const GooglePenaltyRecovery = () => {
                 Let our experts help you identify and recover from Google penalties
               </p>
               <button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whilehover={{ scale: 1.05 }}
+                whiletap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Recovery Process
@@ -247,7 +247,7 @@ const GooglePenaltyRecovery = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

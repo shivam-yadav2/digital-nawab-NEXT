@@ -62,7 +62,7 @@ const PricingSec = () => {
           <div
             key={idx}
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            // //whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             viewport={{ once: true }}
             className="group relative rounded-3xl shadow-2xl bg-white/5 backdrop-blur-xl border border-white/10 hover:shadow-[0_0_30px] hover:shadow-white/10 transition duration-300"

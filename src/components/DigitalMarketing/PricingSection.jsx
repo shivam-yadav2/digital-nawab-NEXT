@@ -68,7 +68,7 @@ const PricingSection = () => {
               variants={cardVariants}
               initial="hidden"
               animate="visible"
-              whileHover="hover"
+              whilehover="hover"
               transition={{ delay: index * 0.2 }}
             >
               <Card

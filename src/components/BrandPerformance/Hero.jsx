@@ -186,7 +186,7 @@ const BrandPerformanceHero = () => {
                   key={index}
                   className="text-center"
                   variants={textVariants}
-                  whileHover={{ scale: 1.05 }}
+                  whilehover={{ scale: 1.05 }}
                 >
                   <div
                     className={`text-3xl font-bold bg-gradient-to-r ${metric.color} bg-clip-text text-transparent`}
@@ -207,11 +207,11 @@ const BrandPerformanceHero = () => {
             >
               <motion.button
                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-4 px-8 rounded-full hover:shadow-2xl transition-all duration-300 flex items-center gap-2 group"
-                whileHover={{
+                whilehover={{
                   scale: 1.05,
                   boxShadow: "0 20px 40px rgba(168, 85, 247, 0.4)",
                 }}
-                whileTap={{ scale: 0.95 }}
+                whiletap={{ scale: 0.95 }}
               >
                 <span>GET PERFORMANCE AUDIT</span>
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -220,7 +220,7 @@ const BrandPerformanceHero = () => {
               <motion.a
                 href="#"
                 className="text-white underline text-lg hover:text-purple-400 transition-colors flex items-center gap-2 group"
-                whileHover={{ x: 5 }}
+                whilehover={{ x: 5 }}
               >
                 <span>VIEW SUCCESS STORIES</span>
                 <TrendingUp className="h-4 w-4 group-hover:scale-110 transition-transform" />
@@ -239,7 +239,7 @@ const BrandPerformanceHero = () => {
               {/* Main Visual Container */}
               <motion.div
                 className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center overflow-hidden"
-                whileHover={{
+                whilehover={{
                   scale: 1.02,
                   rotateY: 5,
                   rotateX: 5,

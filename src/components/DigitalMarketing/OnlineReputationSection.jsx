@@ -131,7 +131,7 @@ const OnlineReputationSection = () => {
                     >
                       <div
                         className="inline-flex items-center gap-2 mb-4"
-                        whileHover={{ scale: 1.05 }}
+                        whilehover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
                         <div className={`p-2 rounded-full bg-gradient-to-r ${item.color} text-white shadow-lg`}>
@@ -154,7 +154,7 @@ const OnlineReputationSection = () => {
                     <div className="relative z-10 flex items-center justify-center">
                       <div
                         className="w-16 h-16 bg-white rounded-full shadow-2xl border-4 border-indigo-200 flex items-center justify-center"
-                        whileHover={{ scale: 1.1, rotate: 180 }}
+                        whilehover={{ scale: 1.1, rotate: 180 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
                         <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${item.color} shadow-lg`} />
@@ -184,7 +184,7 @@ const OnlineReputationSection = () => {
                           alt={`${item.title} service`}
                           className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover h-64 lg:h-80 transition-all duration-300 group-hover:shadow-3xl"
                           loading="lazy"
-                          whileHover={{ scale: 1.05 }}
+                          whilehover={{ scale: 1.05 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         />
                         
@@ -194,7 +194,7 @@ const OnlineReputationSection = () => {
                         {/* Floating icon */}
                         <div
                           className={`absolute -top-4 -right-4 p-3 rounded-full bg-gradient-to-r ${item.color} text-white shadow-lg`}
-                          whileHover={{ y: -5 }}
+                          whilehover={{ y: -5 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
                           <IconComponent className="w-6 h-6" />

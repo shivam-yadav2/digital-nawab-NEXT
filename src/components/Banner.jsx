@@ -5,7 +5,10 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem } from "../components/ui/bre
 import { cn } from "@/lib/utils";
 import React from "react";
 
-export default function Banner({ title = "Connected World", subtitle = "", breadcrumb = [] }) {
+export default function Banner({ title = "Connected World", subtitle = "", breadcrumb = [{
+  label:"",
+  href:"#"
+}] }) {
   return (
     <div className="relative flex h-[50vh] w-full items-center justify-center bg-white dark:bg-black">
       {/* Grid background */}

@@ -260,7 +260,7 @@ const WhatsAppMarketingSection = () => {
               key={index}
               className="text-center group"
               variants={cardVariants}
-              whileHover={{ scale: 1.05 }}
+              whilehover={{ scale: 1.05 }}
             >
               <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-gray-800 border border-gray-700 mb-3 sm:mb-4 group-hover:bg-gray-700 transition-all duration-300 ${stat.color}`}>
                 <stat.icon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
@@ -297,7 +297,7 @@ const WhatsAppMarketingSection = () => {
                 key={index}
                 variants={cardVariants}
                 className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-6 sm:p-8 bg-gray-800/50 border border-gray-700 rounded-2xl hover:bg-gray-800/70 transition-all duration-300 backdrop-blur-sm"
-                whileHover={{ scale: 1.02 }}
+                whilehover={{ scale: 1.02 }}
               >
                 <div className="flex-shrink-0 self-start sm:self-center">
                   <div className="p-3 sm:p-4 bg-gray-700 rounded-xl sm:rounded-2xl">

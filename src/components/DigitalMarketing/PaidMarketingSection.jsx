@@ -163,7 +163,7 @@ const PaidMarketingSection = () => {
                 key={index}
                 className="text-center"
                 variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
+                whilehover={{ scale: 1.05 }}
               >
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-2">
                   <stat.icon className="h-6 w-6 text-white" />
@@ -187,7 +187,7 @@ const PaidMarketingSection = () => {
               key={index}
               className={`group relative p-8 rounded-3xl border-2 ${service.borderColor} ${service.bgColor} ${service.hoverColor} transition-all duration-500 overflow-hidden`}
               variants={itemVariants}
-              whileHover={{ 
+              whilehover={{ 
                 scale: 1.02, 
                 y: -8,
                 transition: { duration: 0.3 }
@@ -233,8 +233,8 @@ const PaidMarketingSection = () => {
 
                 {/* CTA Button */}
                 <div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whilehover={{ scale: 1.05 }}
+                  whiletap={{ scale: 0.95 }}
                 >
                   <Button
                     className={`group/btn bg-gradient-to-r ${service.gradient} hover:shadow-lg transition-all duration-300 text-white border-0`}

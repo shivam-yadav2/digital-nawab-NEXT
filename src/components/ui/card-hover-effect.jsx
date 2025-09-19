@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import {
   Users,
-  Link,
   MapPin,
   BarChart,
   Mail,
@@ -12,9 +11,11 @@ import {
 } from "lucide-react";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
+  console.log(items)
 
   return (
     <div
@@ -26,7 +27,7 @@ export const HoverEffect = ({ items, className }) => {
       {items.map((item, idx) => (
         <Link
           href={item?.link}
-          key={item?.link}
+          key={idx}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}

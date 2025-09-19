@@ -1,3 +1,5 @@
+'use client';
+
 import React , { useEffect, useState } from "react";
 import { motion } from "framer-motion"; // For animations (Aceternity UI often uses Framer Motion)
 import { Button } from "@/components/ui/button"; // Shadcn Button component
@@ -47,9 +49,9 @@ const SeoPlanningProcess = () => {
   return (
     <div className="bg-gradient-to-r from-[rgba(5,5,5,1)] via-[#183a32] to-black py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={fadeIn}
           className="text-center mb-12"
@@ -60,14 +62,14 @@ const SeoPlanningProcess = () => {
           <p className=" text-gray-200 mt-4 lg:max-w-5xl mx-auto">
             Here at Digital Nawab, we offer e-commerce SEO services in India that include product page optimisation, user experience optimisation and enhancement, and transactional keyword targeting. Our Pay-Per-Click (PPC) advertising services approach enables businesses to achieve high-quality traffic, increased search visibility, and maximised conversion rates through major online shopping platforms available in India.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="space-y-12">
+        <motion.div className="space-y-12">
           {steps.map((step, index) => (
             <div
               key={index}
               initial="hidden"
-              whileInView="visible"
+              
               viewport={{ once: true }}
               variants={index % 2 === 0 ? slideInLeft : slideInRight}
               className={`flex flex-col ${
@@ -106,7 +108,7 @@ const SeoPlanningProcess = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

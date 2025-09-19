@@ -32,6 +32,7 @@ import clsx from "clsx";
 // 🔗 ActiveLink wrapper
 function ActiveLink({ href, children, activeClass, inactiveClass }) {
   const pathname = usePathname();
+  console.log(pathname , href)
   const isActive = pathname === href;
 
   return (

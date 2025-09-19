@@ -450,9 +450,9 @@ const AdCreativesSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="text-center mb-16"
@@ -482,12 +482,12 @@ const AdCreativesSection = () => {
               </p>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
 
         {/* Performance Stats */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="mb-16"
@@ -549,12 +549,12 @@ const AdCreativesSection = () => {
               ))}
             </div>
           </GlassCard>
-        </div>
+        </motion.div>
 
         {/* Creative Process Timeline */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="mb-16"
@@ -631,12 +631,12 @@ const AdCreativesSection = () => {
               </div>
             </GlassCard>
           </div>
-        </div>
+        </motion.div>
 
         {/* Ad Services */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
@@ -667,12 +667,12 @@ const AdCreativesSection = () => {
               </div>
             </GlassCard>
           ))}
-        </div>
+        </motion.div>
 
         {/* Call to Action */}
-        <div
+        <motion.div
           initial="hidden"
-          whileInView="visible"
+          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="text-center"
@@ -694,7 +694,7 @@ const AdCreativesSection = () => {
               </Button>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

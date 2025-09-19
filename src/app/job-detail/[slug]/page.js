@@ -65,11 +65,9 @@ export default function JobDetailPage({ params }) {
                   <span className="text-sm">Posted 3 days ago</span>
                 </div>
               </div>
-
               <h1 className="text-3xl lg:text-4xl font-bold capitalize text-gray-900 mb-4">
                 {job?.desig}
               </h1>
-
               <div className="flex flex-wrap items-center gap-6 text-gray-600">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
@@ -116,7 +114,7 @@ export default function JobDetailPage({ params }) {
               </h2>
               <div className="prose prose-gray max-w-none">
                 <p className="text-gray-600 leading-relaxed mb-4">
-                 {job?.about_role}
+                  {job?.about_role}
                 </p>
               </div>
             </div>
@@ -127,12 +125,14 @@ export default function JobDetailPage({ params }) {
                 Key Responsibilities
               </h2>
               <ul className="space-y-4">
-                {job?.responsibilities?.filter((x)=>x!=null)?.map((responsibility, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-600">{responsibility}</span>
-                  </li>
-                ))}
+                {job?.responsibilities
+                  ?.filter((x) => x != null)
+                  ?.map((responsibility, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600">{responsibility}</span>
+                    </li>
+                  ))}
               </ul>
             </div>
 
@@ -142,12 +142,14 @@ export default function JobDetailPage({ params }) {
                 Requirements
               </h2>
               <ul className="space-y-4">
-                {job?.requirements?.filter((x)=>x!=null)?.map((requirement, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-600">{requirement}</span>
-                  </li>
-                ))}
+                {job?.requirements
+                  ?.filter((x) => x != null)
+                  ?.map((requirement, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600">{requirement}</span>
+                    </li>
+                  ))}
               </ul>
             </div>
 
@@ -157,12 +159,14 @@ export default function JobDetailPage({ params }) {
                 Benefits & Perks
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
-                {job?.benefits_perks?.filter((x)=>x!=null)?.map((benefit, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-600">{benefit}</span>
-                  </div>
-                ))}
+                {job?.benefits_perks
+                  ?.filter((x) => x != null)
+                  ?.map((benefit, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-gray-600">{benefit}</span>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
@@ -240,4 +244,4 @@ export default function JobDetailPage({ params }) {
       </div>
     </div>
   );
-};
+}

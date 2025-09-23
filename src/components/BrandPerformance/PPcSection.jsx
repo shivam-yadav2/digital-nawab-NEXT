@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useState } from "react";
 import {
   Search,
@@ -37,6 +38,7 @@ const PPCServicesSection = () => {
         try {
           const res = await fetch("https://dashboard.digitalnawab.com/api/googleppc");
           const data = await res.json();
+          console.log("Fetched PPC services data:", data);
           if (data?.data) {
             setAdsData(data.data);
           }
@@ -241,6 +243,7 @@ const PPCServicesSection = () => {
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {adsData.map((ad) => {
+            console.log(ad)
             const Icon = iconMap[ad.icon] || Search; 
             return (
               <div
@@ -292,7 +295,7 @@ const PPCServicesSection = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         @keyframes fade-in {
           from {
             opacity: 0;
@@ -394,7 +397,7 @@ const PPCServicesSection = () => {
         .animate-bounce-in {
           animation: bounce-in 1s ease-out forwards;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };

@@ -232,7 +232,7 @@ const DigitalNawabSections = () => {
                     }`}>
                       {benefit.title}
                     </h3>
-                    <div className="mb-6 h-32 rounded-xl overflow-hidden">
+                    <div className="mb-6 h-[250px] rounded-xl overflow-hidden">
                       <img
                         src={benefit.image}
                         alt={benefit.title}

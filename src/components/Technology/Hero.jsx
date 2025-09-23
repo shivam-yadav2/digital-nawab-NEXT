@@ -255,7 +255,7 @@ const TechServicesHero = () => {
                         key={index}
                         className="flex-shrink-0 px-4 py-2 rounded-full border text-gray-300 text-sm"
                         style={{
-                          background: `linear-gradient(to right, ${randomColor}20, ${randomColor}40)`,
+                          backgroundImage: `linear-gradient(to right, ${randomColor}20, ${randomColor}40)`,
                           borderColor: `${randomColor}33`,
                         }}
                       >

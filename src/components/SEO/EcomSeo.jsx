@@ -49,7 +49,7 @@ const SeoPlanningProcess = () => {
   return (
     <div className="bg-gradient-to-r from-[rgba(5,5,5,1)] via-[#183a32] to-black py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div
+        <div
           initial="hidden"
           
           viewport={{ once: true }}
@@ -62,9 +62,9 @@ const SeoPlanningProcess = () => {
           <p className=" text-gray-200 mt-4 lg:max-w-5xl mx-auto">
             Here at Digital Nawab, we offer e-commerce SEO services in India that include product page optimisation, user experience optimisation and enhancement, and transactional keyword targeting. Our Pay-Per-Click (PPC) advertising services approach enables businesses to achieve high-quality traffic, increased search visibility, and maximised conversion rates through major online shopping platforms available in India.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div className="space-y-12">
+        <div className="space-y-12">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -108,7 +108,7 @@ const SeoPlanningProcess = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

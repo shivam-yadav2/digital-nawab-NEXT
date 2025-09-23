@@ -137,18 +137,23 @@ const SMMPackages = () => {
   };
 
   const getCampaignIcons = (types) => {
-    const iconMap = {
-      'Awareness': <Eye className="w-4 h-4" />,
-      'Traffic': <MousePointer className="w-4 h-4" />,
-      'Engagement': <Users className="w-4 h-4" />,
-      'Leads': <Target className="w-4 h-4" />,
-      'Conversion': <DollarSign className="w-4 h-4" />,
-      'Video Views': <Video className="w-4 h-4" />,
-      'Full-Funnel (Brand to Sales)': <TrendingUp className="w-4 h-4" />
-    };
-    
-    return types.map(type => iconMap[type] || <Target className="w-4 h-4" />);
+  const iconMap = {
+    'Awareness': <Eye className="w-4 h-4" />,
+    'Traffic': <MousePointer className="w-4 h-4" />,
+    'Engagement': <Users className="w-4 h-4" />,
+    'Leads': <Target className="w-4 h-4" />,
+    'Conversion': <DollarSign className="w-4 h-4" />,
+    'Video Views': <Video className="w-4 h-4" />,
+    'Full-Funnel (Brand to Sales)': <TrendingUp className="w-4 h-4" />
   };
+  
+  return types.map((type) => (
+    <span key={type}>
+      {iconMap[type] || <Target className="w-4 h-4" />}
+    </span>
+  ));
+};
+
 
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-red-50 via-orange-50 to-yellow-50 min-h-screen">
@@ -196,7 +201,9 @@ const SMMPackages = () => {
 
         {/* Packages Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {packages.map((pkg) => (
+          {packages.map((pkg) => {
+            console.log(pkg)
+            return (
             <div
               key={pkg.id}
               onMouseEnter={() => setHoveredCard(pkg.id)}
@@ -290,7 +297,9 @@ const SMMPackages = () => {
 
                   {/* Key Features */}
                   <div className="space-y-3 mb-6">
-                    {Object.entries(pkg.features).slice(0, 6).map(([feature, value]) => (
+                    {Object.entries(pkg.features).slice(0, 6).map(([feature, value]) => {
+                      console.log('Rendering feature:', feature, 'with value:', value);
+                      return (
                       <div key={feature} className="flex items-start gap-3">
                         {value === false ? (
                           <X className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
@@ -302,14 +311,15 @@ const SMMPackages = () => {
                             'text-purple-500'
                           }`} />
                         )}
-                        <div className="flex-1 min-w-0">
+                        <div  className="flex-1 min-w-0">
                           <div className="text-sm font-medium text-gray-900">{feature}</div>
                           {value !== false && (
                             <div className="text-xs text-gray-600 mt-1">{value.toString()}</div>
                           )}
                         </div>
                       </div>
-                    ))}
+                    )
+                    })}
                   </div>
 
                   {/* Performance Metrics */}
@@ -341,7 +351,8 @@ const SMMPackages = () => {
                 </div>
               </div>
             </div>
-          ))}
+          )
+          })}
         </div>
 
         {/* Performance Metrics Section */}

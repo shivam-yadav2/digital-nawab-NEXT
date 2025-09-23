@@ -117,7 +117,7 @@ const SocialMediaShowcase = ({ creatives }) => {
                 style={{ animationDelay: `${index * 100}ms` }}
                 onClick={() => openModal(project)}
               >
-                <div className="relative overflow-hidden aspect-square">
+                <div className="relative overflow-hidden ">
                   <img
                     src={`https://dashboard.digitalnawab.com/${project.image}`}
                     alt={project.title}

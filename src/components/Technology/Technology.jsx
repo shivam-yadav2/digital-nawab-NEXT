@@ -28,7 +28,7 @@ const Technology = () => {
       <HowThisDone />
       <EcommerceTimeline />
       <MaintenanceSupport />
-      <section id="mobile-app-development">
+      {/* <section id="mobile-app-development">
         <MobileAppDevelopment />
       </section>
       <section id="tools-and-technologies">
@@ -36,7 +36,7 @@ const Technology = () => {
       </section>
       <section id="tech-services">
         <TechServicesSection />
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -3,13 +3,13 @@ import React from 'react';
 const RotatingCircles = () => {
   // Icon data for each circle
   const innerCircleIcons = [
-    { name: "./assets/Logos/adobe-photoshop.png" , bg: 'bg-blue-600', text: 'text-white' },
-    { name: "./assets/Logos/figma.png", bg: 'bg-purple-600', text: 'text-white' },
-    { name: "./assets/Logos/adobe-xd.png", bg: 'bg-orange-600', text: 'text-white' },
-    { name: "./assets/Logos/google-fonts-1.webp", bg: 'bg-red-500', text: 'text-white', isSpecial: true },
-    { name: "./assets/Logos/adobe-illustrator.png", bg: 'bg-pink-600', text: 'text-white' },
-    { name: "./assets/Logos/google-fonts-1.webp", bg: 'bg-red-500', text: 'text-white', isSpecial: true },
-    // { name: 'Sketch', bg: 'bg-yellow-500', text: 'text-black', isSpecial: true }
+    { name: "/assets/Logos/adobe-photoshop.png" , bg: 'bg-blue-600', text: 'text-white' },
+    { name: "/assets/Logos/figma.png", bg: 'bg-purple-600', text: 'text-white' },
+    { name: "/assets/Logos/adobe-xd.png", bg: 'bg-orange-600', text: 'text-white' },
+    { name: "/assets/Logos/google-fonts-1.webp", bg: 'bg-red-500', text: 'text-white', isSpecial: true },
+    { name: "/assets/Logos/adobe-illustrator.png", bg: 'bg-pink-600', text: 'text-white' },
+    { name: "/assets/Logos/google-fonts-1.webp", bg: 'bg-red-500', text: 'text-white', isSpecial: true },
+    
   ];
 
   const technologies = [
@@ -49,14 +49,14 @@ const RotatingCircles = () => {
   ];
 
   const outerCircleIcons = [
-    { name: "./assets/Logos/Node.png", bg: 'bg-blue-500', text: 'text-white' },
-    { name: "./assets/Logos/MongoDB.png", bg: 'bg-cyan-400', text: 'text-white', isSpecial: true },
-    { name: "./assets/Logos/php-logo.png", bg: 'bg-black', text: 'text-white' },
-    { name: "./assets/Logos/AWS.png", bg: 'bg-yellow-400', text: 'text-black' },
-    { name: "./assets/Logos/react-js.png", bg: 'bg-teal-400', text: 'text-white', isSpecial: true },
-    { name: "./assets/Logos/javascript.png", bg: 'bg-gray-800', text: 'text-white', isSpecial: true },
-    { name: "./assets/Logos/tailwindcss-icon.png", bg: 'bg-blue-700', text: 'text-white', isSpecial: true },
-    { name: "./assets/Logos/Laravel.png", bg: 'bg-green-600', text: 'text-white', isSpecial: true }
+    { name: "/assets/Logos/Node.png", bg: 'bg-blue-500', text: 'text-white' },
+    { name: "/assets/Logos/MongoDB.png", bg: 'bg-cyan-400', text: 'text-white', isSpecial: true },
+    { name: "/assets/Logos/php-logo.png", bg: 'bg-black', text: 'text-white' },
+    { name: "/assets/Logos/AWS.png", bg: 'bg-yellow-400', text: 'text-black' },
+    { name: "/assets/Logos/react-js.png", bg: 'bg-teal-400', text: 'text-white', isSpecial: true },
+    { name: "/assets/Logos/javascript.png", bg: 'bg-gray-800', text: 'text-white', isSpecial: true },
+    { name: "/assets/Logos/tailwindcss-icon.png", bg: 'bg-blue-700', text: 'text-white', isSpecial: true },
+    { name: "/assets/Logos/Laravel.png", bg: 'bg-green-600', text: 'text-white', isSpecial: true }
   ];
 
   const IconCircle = ({ icon, index, total, radius, reverse = false }) => {

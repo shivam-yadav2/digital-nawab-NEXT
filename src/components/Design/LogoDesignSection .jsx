@@ -41,26 +41,9 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-blue-500 to-cyan-500",
       height: "h-48",
-      img: "/assets/Logos/logo/academy 1.png",
+      img: "/assets/Logos/logo/academy 1.webp",
     },
-    {
-      id: 2,
-      title: "Bhalla Logo",
-      category: "business",
-      type: "Symbol + Text",
-      // color: "from-purple-500 to-pink-500",
-      height: "h-64",
-      img: "/assets/Logos/logo/bhalla logo.jfif",
-    },
-    {
-      id: 3,
-      title: "BK N",
-      category: "business",
-      type: "Monogram",
-      // color: "from-green-500 to-teal-500",
-      height: "h-52",
-      img: "/assets/Logos/logo/BK logo n.png",
-    },
+
     {
       id: 4,
       title: "Divyanjali Logo",
@@ -68,7 +51,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-gray-500 to-gray-700",
       height: "h-54",
-      img: "/assets/Logos/logo/Divyanjali LOGO .png",
+      img: "/assets/Logos/logo/Divyanjali LOGO .webp",
     },
     {
       id: 5,
@@ -77,7 +60,7 @@ const LogoDesignSection = () => {
       type: "Script Logo",
       // color: "from-yellow-500 to-orange-500",
       height: "h-50",
-      img: "/assets/Logos/logo/JAYA LOGO1 (4) copy.png",
+      img: "/assets/Logos/logo/JAYA LOGO1 (4) copy.webp",
     },
     {
       id: 6,
@@ -86,9 +69,9 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-amber-500 to-orange-500",
       height: "h-58",
-      img: "/assets/Logos/logo/KNK LOGO GOLDEN.png",
+      img: "/assets/Logos/logo/KNK LOGO GOLDEN.webp",
     },
-  
+
     {
       id: 8,
       title: "ICS Logo",
@@ -96,7 +79,7 @@ const LogoDesignSection = () => {
       type: "Monogram",
       // color: "from-blue-500 to-cyan-500",
       height: "h-48",
-      img: "/assets/Logos/logo/LCS LOGO.png",
+      img: "/assets/Logos/logo/LCS LOGO.webp",
     },
     {
       id: 9,
@@ -105,7 +88,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-green-500 to-emerald-500",
       height: "h-52",
-      img: "/assets/Logos/logo/logo final (1) (1).jpg",
+      img: "/assets/Logos/logo/logo final (1) (1).webp",
     },
     {
       id: 10,
@@ -114,7 +97,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-red-500 to-pink-500",
       height: "h-52",
-      img: "/assets/Logos/logo/lOGO FINAL.png",
+      img: "/assets/Logos/logo/lOGO FINAL.webp",
     },
     {
       id: 11,
@@ -123,7 +106,7 @@ const LogoDesignSection = () => {
       type: "Symbol + Text",
       // color: "from-purple-500 to-pink-500",
       height: "h-64",
-      img: "/assets/Logos/logo/logo high.png",
+      img: "/assets/Logos/logo/logo high.webp",
     },
     {
       id: 12,
@@ -132,7 +115,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-pink-500 to-rose-500",
       height: "h-50",
-      img: "/assets/Logos/logo/LOGO thia pink.png",
+      img: "/assets/Logos/logo/LOGO thia pink.webp",
     },
     {
       id: 13,
@@ -141,7 +124,7 @@ const LogoDesignSection = () => {
       type: "Monogram",
       // color: "from-gray-700 to-gray-900",
       height: "h-48",
-      img: "/assets/Logos/logo/Logo TTK ( black).png",
+      img: "/assets/Logos/logo/Logo TTK ( black).webp",
     },
     {
       id: 14,
@@ -150,7 +133,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-red-500 to-orange-500",
       height: "h-56",
-      img: "/assets/Logos/logo/LOGO_DNdd.png",
+      img: "/assets/Logos/logo/LOGO_DNdd.webp",
     },
     {
       id: 15,
@@ -159,7 +142,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-blue-500 to-cyan-500",
       height: "h-48",
-      img: "/assets/Logos/logo/logoaa.png",
+      img: "/assets/Logos/logo/logoaa.webp",
     },
     {
       id: 16,
@@ -168,7 +151,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-green-500 to-teal-500",
       height: "h-52",
-      img: "/assets/Logos/logo/logo2.png",
+      img: "/assets/Logos/logo/logo2.webp",
     },
     {
       id: 17,
@@ -177,7 +160,7 @@ const LogoDesignSection = () => {
       type: "Monogram",
       // color: "from-amber-500 to-orange-500",
       height: "h-54",
-      img: "/assets/Logos/logo/Miqh Logoj.png",
+      img: "/assets/Logos/logo/Miqh Logoj.webp",
     },
     {
       id: 18,
@@ -186,7 +169,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-gray-700 to-black",
       height: "h-50",
-      img: "/assets/Logos/logo/MK black logo .png",
+      img: "/assets/Logos/logo/MK black logo .webp",
     },
     {
       id: 19,
@@ -195,7 +178,7 @@ const LogoDesignSection = () => {
       type: "Symbol + Text",
       // color: "from-yellow-500 to-orange-500",
       height: "h-48",
-      img: "/assets/Logos/logo/MK_Logo_ (1) - Copy.png",
+      img: "/assets/Logos/logo/MK_Logo_ (1) - Copy.webp",
     },
     {
       id: 20,
@@ -204,7 +187,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-rose-500 to-pink-500",
       height: "h-56",
-      img: "/assets/Logos/logo/Mrs India Logo.png",
+      img: "/assets/Logos/logo/Mrs India Logo.webp",
     },
     {
       id: 21,
@@ -213,7 +196,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-green-500 to-lime-500",
       height: "h-58",
-      img: "/assets/Logos/logo/pardehi logo png.png",
+      img: "/assets/Logos/logo/pardehi logo png.webp",
     },
 
     {
@@ -223,7 +206,7 @@ const LogoDesignSection = () => {
       type: "Script Logo",
       // color: "from-purple-500 to-pink-500",
       height: "h-54",
-      img: "/assets/Logos/logo/prerna singh logo.png",
+      img: "/assets/Logos/logo/prerna singh logo.webp",
     },
     {
       id: 24,
@@ -232,7 +215,7 @@ const LogoDesignSection = () => {
       type: "Symbol + Text",
       // color: "from-blue-500 to-cyan-500",
       height: "h-52",
-      img: "/assets/Logos/logo/rambler.png",
+      img: "/assets/Logos/logo/rambler.webp",
     },
     {
       id: 25,
@@ -241,7 +224,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-amber-500 to-orange-500",
       height: "h-50",
-      img: "/assets/Logos/logo/ritu roy logo.png",
+      img: "/assets/Logos/logo/ritu roy logo.webp",
     },
     {
       id: 26,
@@ -250,7 +233,7 @@ const LogoDesignSection = () => {
       type: "Monogram",
       // color: "from-green-500 to-emerald-500",
       height: "h-48",
-      img: "/assets/Logos/logo/SBSB logo.png",
+      img: "/assets/Logos/logo/SBSB logo.webp",
     },
     {
       id: 27,
@@ -259,7 +242,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-red-500 to-pink-500",
       height: "h-56",
-      img: "/assets/Logos/logo/season-3 logo.PNG",
+      img: "/assets/Logos/logo/season-3 logo.WEBP",
     },
     {
       id: 28,
@@ -268,7 +251,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-purple-500 to-pink-500",
       height: "h-64",
-      img: "/assets/Logos/logo/signex logo.png",
+      img: "/assets/Logos/logo/signex logo.webp",
     },
     {
       id: 29,
@@ -277,7 +260,7 @@ const LogoDesignSection = () => {
       type: "Symbol + Text",
       // color: "from-rose-500 to-red-500",
       height: "h-52",
-      img: "/assets/Logos/logo/skin art logo.png",
+      img: "/assets/Logos/logo/skin art logo.webp",
     },
     {
       id: 30,
@@ -286,7 +269,7 @@ const LogoDesignSection = () => {
       type: "Monogram",
       // color: "from-green-500 to-teal-500",
       height: "h-48",
-      img: "/assets/Logos/logo/sri venu.png",
+      img: "/assets/Logos/logo/sri venu.webp",
     },
     {
       id: 31,
@@ -295,7 +278,7 @@ const LogoDesignSection = () => {
       type: "Wordmark",
       // color: "from-blue-500 to-cyan-500",
       height: "h-54",
-      img: "/assets/Logos/logo/tender hearts school logo png.png",
+      img: "/assets/Logos/logo/tender hearts school logo png.webp",
     },
     {
       id: 32,
@@ -304,7 +287,7 @@ const LogoDesignSection = () => {
       type: "Symbol",
       // color: "from-amber-500 to-orange-500",
       height: "h-50",
-      img: "/assets/Logos/logo/TISKA LOGO MAIL.png",
+      img: "/assets/Logos/logo/TISKA LOGO MAIL.webp",
     },
     {
       id: 33,
@@ -313,7 +296,7 @@ const LogoDesignSection = () => {
       type: "Script Logo",
       // color: "from-gray-500 to-gray-700",
       height: "h-56",
-      img: "/assets/Logos/logo/vinod sharraf png.png",
+      img: "/assets/Logos/logo/vinod sharraf png.webp",
     },
     {
       id: 34,
@@ -322,7 +305,7 @@ const LogoDesignSection = () => {
       type: "Symbol + Text",
       // color: "from-green-500 to-lime-500",
       height: "h-46",
-      img: "/assets/Logos/logo/WhatsApp Image 2023-06-21 at 3.35.37 PM.jpeg",
+      img: "/assets/Logos/logo/WhatsApp Image 2023-06-21 at 3.35.37 PM.webp",
     },
   ];
 

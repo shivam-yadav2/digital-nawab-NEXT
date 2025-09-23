@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { BarChart3, TrendingUp, Target, Users, Zap, ArrowRight, LineChart, Activity } from 'lucide-react';
 

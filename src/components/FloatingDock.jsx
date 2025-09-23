@@ -2,17 +2,12 @@
 
 import React from "react";
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
   IconTerminal2,
   IconGraph,
   IconCode,
   IconPhoto,
   IconMessage,
-  IconBrandTwitter,
 } from "@tabler/icons-react";
 import { Contact } from "lucide-react";
 import {
@@ -32,7 +27,6 @@ import clsx from "clsx";
 // 🔗 ActiveLink wrapper
 function ActiveLink({ href, children, activeClass, inactiveClass }) {
   const pathname = usePathname();
-  console.log(pathname , href)
   const isActive = pathname === href;
 
   return (
@@ -49,86 +43,57 @@ function ActiveLink({ href, children, activeClass, inactiveClass }) {
 }
 
 const FloatingDock = () => {
+  // ✅ Updated services list from NavBar
   const services = [
     {
-      title: "Digital Marketing",
-      icon: (
-        <IconGraph className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/digital-marketing",
+      title: "SEO Marketing",
+      icon: <IconGraph className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/seo-company-in-lucknow",
     },
     {
-      title: "Brand Optimization",
-      icon: (
-        <IconBrandGithub className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/brand-performance",
+      title: "Google Ads Services",
+      icon: <IconMessage className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/pay-per-click-services",
     },
     {
-      title: "SEO & Analytics",
-      icon: (
-        <IconNewSection className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/seo-analytics",
+      title: "Social Media Marketing",
+      icon: <IconMessage className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/social-media-marketing",
     },
     {
       title: "Graphic Design",
-      icon: (
-        <IconPhoto className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/graphic-design",
+      icon: <IconPhoto className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/graphic-designing-services",
     },
     {
-      title: "Development Services",
-      icon: (
-        <IconCode className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/technology",
+      title: "Website Development",
+      icon: <IconCode className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/website-design-and-development",
     },
     {
-      title: "Content Marketing",
-      icon: (
-        <IconMessage className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/content-marketing",
-    },
-    {
-      title: "Social Media Strategy",
-      icon: (
-        <IconBrandTwitter className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/social-media",
-    },
-    {
-      title: "Our Portfolio",
-      icon: (
-        <IconPhoto className="h-5 w-5 text-neutral-300 group-hover:text-blue-400 transition-colors" />
-      ),
-      href: "/portfolio",
+      title: "App Development",
+      icon: <IconCode className="h-5 w-5 text-neutral-300 group-hover:text-blue-400" />,
+      href: "/service/mobile-application-development",
     },
   ];
 
   const links = [
     {
       title: "Home",
-      icon: (
-        <IconHome className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconHome className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />,
       href: "/",
     },
     {
-      title: "About",
-      icon: (
-        <IconTerminal2 className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/about",
+      title: "About Us",
+      icon: <IconTerminal2 className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />,
+      href: "/about-us",
     },
     {
       title: "Services",
       icon: (
         <Drawer>
           <DrawerTrigger>
-            <IconExchange className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
+            <IconGraph className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
           </DrawerTrigger>
           <DrawerContent className="bg-gray-900 border-gray-800">
             <DrawerHeader className="pb-2">
@@ -136,7 +101,7 @@ const FloatingDock = () => {
                 Our Services
               </DrawerTitle>
               <DrawerDescription className="text-gray-400 text-center">
-                Choose from our comprehensive range of digital services
+                Explore our marketing, design, and development solutions
               </DrawerDescription>
             </DrawerHeader>
 
@@ -163,9 +128,9 @@ const FloatingDock = () => {
 
             <DrawerFooter className="pt-2">
               <DrawerClose>
-                <button className="w-full bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition-colors">
+                <div className="w-full bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition-colors">
                   Close
-                </button>
+                </div>
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>
@@ -175,17 +140,18 @@ const FloatingDock = () => {
     },
     {
       title: "Portfolio",
-      icon: (
-        <IconNewSection className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconPhoto className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />,
       href: "/portfolio",
     },
     {
-      title: "Contact",
-      icon: (
-        <Contact className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/contact",
+      title: "Career",
+      icon: <IconTerminal2 className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />,
+      href: "/career",
+    },
+    {
+      title: "Contact Us",
+      icon: <Contact className="h-5 w-5 text-neutral-500 dark:text-neutral-300" />,
+      href: "/contact-us",
     },
   ];
 

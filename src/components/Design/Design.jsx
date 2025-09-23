@@ -1,27 +1,24 @@
 'use client';
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-import DesignServicesHero from "./Hero";
+import { NewHero } from "./NewHero";
 import BrandingSection from "./BrandingSection ";
 import LogoDesignSection from "./LogoDesignSection ";
 import AdCreativesSection from "./AdCreativesSection ";
-import MotionGraphicsSection from "./MotionGraphicsSection ";
 import PackagingDesignSection from "./PackagingDesignSection ";
-import { NewHero } from "./NewHero";
 import { ThreeDMarqueeDemoSecond } from "../Home/ThreeDMarqueeDemoSecond";
 import GraphicPackages from "./GraphicPackages";
 
-const Design = () => {
+// 👇 Extract your hook usage into a child component wrapped by Suspense
+const DesignContent = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Extract hash manually (Next.js doesn’t auto-handle it like react-router)
   useEffect(() => {
-    
     const hash = window.location.hash;
-   
+
     if (hash) {
       const timeoutId = setTimeout(() => {
         const element = document.getElementById(hash.replace("#", ""));
@@ -38,7 +35,6 @@ const Design = () => {
 
   return (
     <div>
-      {/* <DesignServicesHero /> */}
       <NewHero />
 
       <section id="brand-design">
@@ -47,10 +43,6 @@ const Design = () => {
 
       <ThreeDMarqueeDemoSecond />
       <AdCreativesSection />
-
-      <section id="motion-graphics">
-        <MotionGraphicsSection />
-      </section>
 
       <LogoDesignSection />
 
@@ -62,6 +54,14 @@ const Design = () => {
         <GraphicPackages />
       </section>
     </div>
+  );
+};
+
+const Design = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DesignContent />
+    </Suspense>
   );
 };
 

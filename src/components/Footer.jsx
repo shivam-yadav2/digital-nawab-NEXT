@@ -26,68 +26,114 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Our Services */}
+          {/* Our Services (from NavBar) */}
           <div>
             <h4 className="text-[#b7337c] custom-bold mb-4">
               <ColourfulText text="Our Services" />
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/service/seo-company-in-lucknow"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   SEO Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Research Topic Trends
+                <Link
+                  href="/service/pay-per-click-services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Google Ads Services
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Email Marketing
+                <Link
+                  href="/service/social-media-marketing"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Social Media Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Google PPC
+                <Link
+                  href="/service/graphic-designing-services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Graphic Design Services
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blogs
+                <Link
+                  href="/service/website-design-and-development"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Website Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/service/mobile-application-development"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  App Development
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Explore More */}
+          {/* Explore More (from NavBar + legal) */}
           <div>
             <h4 className="text-[#b7337c] custom-bold mb-4">
               <ColourfulText text="Explore More" />
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/portfolio"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about-us"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Feature
+                <Link
+                  href="/career"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Career
                 </Link>
               </li>
               <li>
-                <Link href="/terms&conditions" className="text-gray-300 hover:text-white transition-colors">
-                  Terms and Conditions
+                <Link
+                  href="/term-condition"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="/refund-cancellation" className="text-gray-300 hover:text-white transition-colors">
-                  Refund and Cancellation
+                <Link
+                  href="/refund-cancellation"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Refund & Cancellation
                 </Link>
               </li>
               <li>
-                <Link href="/privacy&policy" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/privacy-policy"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -147,7 +193,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>Digital Nawab 2024 © All rights reserved</p>
-            <Link href="/terms&conditions" className="hover:text-white">
+            <Link href="/term-condition" className="hover:text-white">
               Terms & Conditions
             </Link>
           </div>

@@ -25,7 +25,7 @@ useEffect(() => {
       if (result?.data) {
         const formattedServices = result.data.map((item) => ({
           icon: (
-            <span className="block text-6xl text-gray-600 group-hover:text-white transition-colors text-left">
+            <span className="block text-4xl text-gray-600 group-hover:text-white transition-colors text-left">
               {item.icon}
             </span>
           ),  

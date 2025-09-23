@@ -450,13 +450,7 @@ const AdCreativesSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div
-          initial="hidden"
-          
-          viewport={{ once: true }}
-          variants={sectionVariants}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <Card className="border-none shadow-none bg-transparent">
             <CardHeader>
               <div className="inline-flex items-center justify-center gap-3 mb-6">
@@ -482,12 +476,11 @@ const AdCreativesSection = () => {
               </p>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
 
         {/* Performance Stats */}
-        <motion.div
+        <div
           initial="hidden"
-          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="mb-16"
@@ -549,12 +542,11 @@ const AdCreativesSection = () => {
               ))}
             </div>
           </GlassCard>
-        </motion.div>
+        </div>
 
         {/* Creative Process Timeline */}
-        <motion.div
+        <div
           initial="hidden"
-          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="mb-16"
@@ -631,12 +623,11 @@ const AdCreativesSection = () => {
               </div>
             </GlassCard>
           </div>
-        </motion.div>
+        </div>
 
         {/* Ad Services */}
-        <motion.div
+        <div
           initial="hidden"
-          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
@@ -667,12 +658,11 @@ const AdCreativesSection = () => {
               </div>
             </GlassCard>
           ))}
-        </motion.div>
+        </div>
 
         {/* Call to Action */}
-        <motion.div
+        <div
           initial="hidden"
-          
           viewport={{ once: true }}
           variants={sectionVariants}
           className="text-center"
@@ -694,7 +684,7 @@ const AdCreativesSection = () => {
               </Button>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

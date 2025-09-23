@@ -94,7 +94,7 @@ const GooglePenaltyRecovery = () => {
 
       <div className="relative max-w-7xl mx-auto">
         {/* Header Section */}
-        <motion.div
+        <div
           initial="hidden"
           
           viewport={{ once: true }}
@@ -112,14 +112,14 @@ const GooglePenaltyRecovery = () => {
             Expert solutions to identify, analyze, and recover from Google penalties,
             restoring your website's rankings and organic traffic.
           </p>
-        </motion.div>
+        </div>
 
         {/* Penalty Types Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {penaltyTypes.map((penalty, index) => {
             const IconComponent = penalty.icon;
             return (
-              <motion.div
+              <div
                 key={index}
                 initial="hidden"
                 
@@ -155,13 +155,13 @@ const GooglePenaltyRecovery = () => {
                   </ul>
                 </div>
                 <div className="absolute -inset-px bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-all duration-300" />
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
         {/* Recovery Process Section */}
-        <motion.div
+        <div
           initial="hidden"
           
           viewport={{ once: true }}
@@ -181,7 +181,7 @@ const GooglePenaltyRecovery = () => {
               {recoverySteps.map((step, index) => {
                 const IconComponent = step.icon;
                 return (
-                  <motion.div
+                  <div
                     key={index}
                     initial="hidden"
                     
@@ -208,15 +208,15 @@ const GooglePenaltyRecovery = () => {
                       <h4 className="text-xl font-bold mb-4">{step.title}</h4>
                       <p className="text-gray-300">{step.description}</p>
                     </div>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* CTA Section */}
-        <motion.div
+        <div
           initial="hidden"
           
           viewport={{ once: true }}
@@ -247,7 +247,7 @@ const GooglePenaltyRecovery = () => {
               </button>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

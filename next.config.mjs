@@ -2,8 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["dashboard.digitalnawab.com"], // allow external images
+    domains: ["dashboard.digitalnawab.com"],
   },
+  
 };
 
 export default nextConfig;

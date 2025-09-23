@@ -88,26 +88,28 @@ const NavBar = () => {
                         </MenubarTrigger>
                         <MenubarContent>
                           <MenubarItem asChild>
-                            <Link href="/seo-analytics">SEO Marketing</Link>
-                          </MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem asChild>
-                            <Link href="/brand-performance">
-                              Google Ads Marketing
+                            <Link href="/service/seo-company-in-lucknow">
+                              SEO Marketing
                             </Link>
                           </MenubarItem>
                           <MenubarSeparator />
                           <MenubarItem asChild>
-                            <Link href="/social-media">
+                            <Link href="/service/pay-per-click-services">
+                              Google Ads Services
+                            </Link>
+                          </MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem asChild>
+                            <Link href="/service/social-media-marketing">
                               Social Media Marketing
                             </Link>
                           </MenubarItem>
-                          <MenubarSeparator />
+                          {/* <MenubarSeparator />
                           <MenubarItem asChild>
                             <Link href="/content-marketing">
                               Content Marketing
                             </Link>
-                          </MenubarItem>
+                          </MenubarItem> */}
                         </MenubarContent>
                       </MenubarMenu>
                     </Menubar>
@@ -115,20 +117,42 @@ const NavBar = () => {
 
                   {/* Regular Links */}
                   <li>
-                    <ActiveLink href="/graphic-design">
-                      Graphic Design
+                    <ActiveLink href="/service/graphic-designing-services">
+                      Graphic Design Services
                     </ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink href="/technology">
-                      Development Services
-                    </ActiveLink>
+                    <Menubar>
+                      <MenubarMenu>
+                        <MenubarTrigger>
+                          <h2 className="text-white truncate text-sm lg:text-md flex items-center gap-1 transition-colors duration-400 cursor-pointer">
+                            Development Services{" "}
+                            <span className="text-xs">
+                              <ChevronDown size={20} />
+                            </span>
+                          </h2>
+                        </MenubarTrigger>
+                        <MenubarContent>
+                          <MenubarItem asChild>
+                            <Link href="/service/website-design-and-development">
+                              Website Development
+                            </Link>
+                          </MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem asChild>
+                            <Link href="/service/mobile-application-development">
+                              App Development
+                            </Link>
+                          </MenubarItem>
+                        </MenubarContent>
+                      </MenubarMenu>
+                    </Menubar>
                   </li>
                   <li>
                     <ActiveLink href="/portfolio">Portfolio</ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink href="/about">About Us</ActiveLink>
+                    <ActiveLink href="/about-us">About Us</ActiveLink>
                   </li>
                   <li>
                     <ActiveLink href="/career">Career</ActiveLink>
@@ -140,7 +164,7 @@ const NavBar = () => {
             {/* Contact Button */}
             <div className="hidden md:flex items-center ml-auto">
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-green-400 transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]"
               >
                 <div className="absolute flex px-1 py-0.5 justify-start items-center inset-0">

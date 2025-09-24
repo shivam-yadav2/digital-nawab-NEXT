@@ -1,5 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Cloud, Code, Smartphone, Database, Shield, Globe, ChevronRight, Zap } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import {
+  Cloud,
+  Code,
+  Smartphone,
+  Database,
+  Shield,
+  Globe,
+  ChevronRight,
+  Zap,
+} from "lucide-react";
 
 const TechServicesSection = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -13,17 +22,19 @@ const TechServicesSection = () => {
     security: Shield,
     default: Globe,
   };
-const staticColors = [
-  "from-blue-500 to-cyan-400",
-  "from-purple-500 to-pink-400",
-  "from-emerald-500 to-teal-400",
-  "from-orange-500 to-red-400",
-  "from-violet-500 to-purple-400"
-];
+  const staticColors = [
+    "from-blue-500 to-cyan-400",
+    "from-purple-500 to-pink-400",
+    "from-emerald-500 to-teal-400",
+    "from-orange-500 to-red-400",
+    "from-violet-500 to-purple-400",
+  ];
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("https://dashboard.digitalnawab.com/api/getdev_innovation");
+        const res = await fetch(
+          "https://dashboard.digitalnawab.com/api/getdev_innovation"
+        );
         const json = await res.json();
         if (json.data) {
           const formatted = json.data.map((item, idx) => ({
@@ -33,7 +44,7 @@ const staticColors = [
             subtitle: item.sub_heading,
             description: item.description,
             services: item.features || [],
-           color: staticColors[idx % staticColors.length],
+            color: staticColors[idx % staticColors.length],
             delay: idx * 200,
           }));
           setServices(formatted);
@@ -44,7 +55,7 @@ const staticColors = [
     };
 
     fetchData();
-  }, []); 
+  }, []);
 
   useEffect(() => {
     if (services.length === 0) return;
@@ -53,14 +64,18 @@ const staticColors = [
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleItems((prev) => new Set([...prev, entry.target.dataset.id]));
+            setVisibleItems(
+              (prev) => new Set([...prev, entry.target.dataset.id])
+            );
           }
         });
       },
       { threshold: 0.2 }
     );
 
-    document.querySelectorAll("[data-id]").forEach((el) => observer.observe(el));
+    document
+      .querySelectorAll("[data-id]")
+      .forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [services]);
 
@@ -81,16 +96,19 @@ const staticColors = [
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-6">
             <Zap className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium text-white/70">Technology Services</span>
+            <span className="text-sm font-medium text-white/70">
+              Technology Services
+            </span>
           </div>
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-           Our Mobile App
+            Our Mobile App
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
               Development Process
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Empowering businesses with cutting-edge technology solutions that drive growth and digital transformation
+            Empowering businesses with cutting-edge technology solutions that
+            drive growth and digital transformation
           </p>
         </div>
 
@@ -105,29 +123,49 @@ const staticColors = [
               const IconComponent = service.icon;
               const isVisible = visibleItems.has(service.id.toString());
               const isEven = index % 2 === 0;
-              
+
               return (
                 <div
                   key={service.id}
                   data-id={service.id}
-                  className={`relative flex items-center ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col md:gap-16`}
+                  className={`relative flex items-center ${
+                    isEven ? "md:flex-row" : "md:flex-row-reverse"
+                  } flex-col md:gap-16`}
                   style={{
-                    animationDelay: `${service.delay}ms`
+                    animationDelay: `${service.delay}ms`,
                   }}
                 >
                   {/* Timeline Node */}
-                  <div className={`absolute left-8 md:left-1/2 w-4 h-4 bg-gradient-to-r ${service.color} rounded-full transform -translate-x-1/2 transition-all duration-300 ${isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} z-20`}>
-                    <div className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-full animate-ping opacity-20`}></div>
+                  <div
+                    className={`absolute left-8 md:left-1/2 w-4 h-4 bg-gradient-to-r ${
+                      service.color
+                    } rounded-full transform -translate-x-1/2 transition-all duration-300 ${
+                      isVisible ? "scale-100 opacity-100" : "scale-0 opacity-0"
+                    } z-20`}
+                  >
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-full animate-ping opacity-20`}
+                    ></div>
                   </div>
 
                   {/* Content Card */}
-                  <div className={`w-full md:w-5/12 ml-20 md:ml-0 transform transition-all duration-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                  <div
+                    className={`w-full md:w-5/12 ml-20 md:ml-0 transform transition-all duration-300 ${
+                      isVisible
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-8 opacity-0"
+                    }`}
+                  >
                     <div className="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:bg-white/8 transition-all duration-500 hover:scale-105 hover:border-white/20">
                       {/* Gradient Border Effect */}
-                      <div className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}></div>
-                      
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}
+                      ></div>
+
                       {/* Icon */}
-                      <div className={`relative w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <div
+                        className={`relative w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                      >
                         <IconComponent className="w-8 h-8 text-white" />
                       </div>
 
@@ -136,7 +174,9 @@ const staticColors = [
                         <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300">
                           {service.title}
                         </h3>
-                        <p className={`text-sm font-medium bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-4`}>
+                        <p
+                          className={`text-sm font-medium bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-4`}
+                        >
                           {service.subtitle}
                         </p>
                         <p className="text-gray-300 mb-6 leading-relaxed">
@@ -146,15 +186,22 @@ const staticColors = [
                         {/* Services List */}
                         <div className="space-y-2 mb-6">
                           {service.services.map((item, idx) => (
-                            <div key={idx} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-200">
+                            <div
+                              key={idx}
+                              className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-200"
+                            >
                               <ChevronRight className="w-4 h-4 text-emerald-400" />
-                              <span className="text-sm font-medium">{item}</span>
+                              <span className="text-sm font-medium">
+                                {item}
+                              </span>
                             </div>
                           ))}
                         </div>
 
                         {/* Action Button */}
-                        <button className={`group/btn relative bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-current/25 overflow-hidden`}>
+                        <button
+                          className={`group/btn relative bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-current/25 overflow-hidden`}
+                        >
                           <span className="relative z-10 flex items-center gap-2">
                             Learn More
                             <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
@@ -176,8 +223,13 @@ const staticColors = [
         {/* Bottom CTA */}
         <div className="text-center mt-20">
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Transform Your Business?</h3>
-            <p className="text-gray-300 mb-6">Let's discuss how our technology solutions can accelerate your digital journey.</p>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Transform Your Business?
+            </h3>
+            <p className="text-gray-300 mb-6">
+              Let's discuss how our technology solutions can accelerate your
+              digital journey.
+            </p>
             <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
               Start Your Project
             </button>

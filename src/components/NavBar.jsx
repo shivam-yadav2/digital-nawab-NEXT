@@ -104,6 +104,13 @@ const NavBar = () => {
                               Social Media Marketing
                             </Link>
                           </MenubarItem>
+                          <MenubarSeparator />
+
+                          <MenubarItem asChild>
+                            <Link href="/service/direct-marketing">
+                              Direct Marketing
+                            </Link>
+                          </MenubarItem>
                           {/* <MenubarSeparator />
                           <MenubarItem asChild>
                             <Link href="/content-marketing">

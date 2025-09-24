@@ -132,7 +132,11 @@ const FloatingDock = () => {
         {links.map((link, index) => {
           if (link.title === "Services") {
             return (
-              <Drawer key={index} open={drawerOpen} onOpenChange={setDrawerOpen}>
+              <Drawer
+                key={index}
+                open={drawerOpen}
+                onOpenChange={setDrawerOpen}
+              >
                 <DrawerTrigger asChild>
                   <button className="p-2 rounded-full flex flex-col items-center justify-center gap-1 text-neutral-300 hover:bg-gray-700">
                     <IconGraph className="h-6 w-6" />

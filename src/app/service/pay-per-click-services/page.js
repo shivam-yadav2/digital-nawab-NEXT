@@ -15,8 +15,7 @@ const page = ({ params }) => {
         <BrandPerformanceHero/>
         <PPC/>
         <PPCServicesSection/>
-        <ABTestingSection/>
-        <MediaBuyingSection/>
+        
     </div>
   )
 }
